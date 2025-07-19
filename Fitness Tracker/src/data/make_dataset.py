@@ -131,6 +131,4 @@ data_reshampled['set'] = data_reshampled['set'].astype(int)
 # Export dataset
 # --------------------------------------------------------------
 
-data_reshampled['set'] = data_reshampled['set'].astype(int)
-
-data_reshampled.info()
+data_reshampled.to_pickle('../../data/interim/01_data_processed.pkl')
