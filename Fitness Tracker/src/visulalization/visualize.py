@@ -21,7 +21,7 @@ plt.show()
 # Plot all exercises
 # --------------------------------------------------------------
 
-mpl.style.use("seaborn-v0_8-deep")
+mpl.style.use("seaborn-v0_8-deep") # type: ignore
 mpl.rcParams['figure.figsize'] = (20, 5)
 mpl.rcParams['figure.dpi'] = 100 
 
@@ -37,6 +37,7 @@ for label in df['label'].unique():
 for label in df['label'].unique():
     subset = df[df['label'] == label]
     fig, ax = plt.subplots()
+    # this will only take first 100 rows of data and plot them 
     plt.plot(subset[:100]['acc_y'].reset_index(drop=True), label = label)
     plt.legend()
     plt.show()
@@ -45,7 +46,7 @@ for label in df['label'].unique():
 # --------------------------------------------------------------
 # Adjust plot settings
 # --------------------------------------------------------------
-mpl.style.use("seaborn-v0_8-deep")
+mpl.style.use("seaborn-v0_8-deep") # type: ignore
 mpl.rcParams['figure.figsize'] = (20, 5)
 mpl.rcParams['figure.dpi'] = 100 
 
