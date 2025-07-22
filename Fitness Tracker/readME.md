@@ -152,7 +152,7 @@ There are more columns which are indroduced during the data analysis.. see throu
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/gargdivyansh1/fitness-tracker
+git clone https://github.com/gargdivyansh1/MachineLearningProjects/tree/main/Fitness%20Tracker
 cd fitness-tracker
 ````
 
